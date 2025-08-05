@@ -1,0 +1,33 @@
+.navbar {
+  background-image: url('./images/image-header.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: "Noto Serif JP", serif;
+}
+body {
+  color: #212529;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.caveat-brush-regular {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#random-photos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+#random-photos-flex .flex-img {
+  height: 300px; 
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+.caveat-brush-regular {
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
