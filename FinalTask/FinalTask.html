@@ -227,7 +227,7 @@
       currentModalIndex = idx;
       const modal = document.getElementById("photo-modal");
       const modalImg = document.getElementById("modal-img");
-      modalImg.src = `./images/${currentPhotoSet[currentModalIndex]}`;
+      modalImg.src = `https://raw.githubusercontent.com/maxiohashi/ServiceFinalTask/main/images/${currentPhotoSet[currentModalIndex]}`;
       modal.style.display = "flex";
       updateModalArrows();
     }
@@ -261,7 +261,7 @@
         e.stopPropagation();
         if (currentModalIndex > 0) {
           currentModalIndex--;
-          modalImg.src = `./images/${currentPhotoSet[currentModalIndex]}`;
+          modalImg.src = `https://raw.githubusercontent.com/maxiohashi/ServiceFinalTask/main/images/${currentPhotoSet[currentModalIndex]}`;
           updateModalArrows();
         }
       });
@@ -269,7 +269,7 @@
         e.stopPropagation();
         if (currentModalIndex < currentPhotoSet.length - 1) {
           currentModalIndex++;
-          modalImg.src = `./images/${currentPhotoSet[currentModalIndex]}`;
+          modalImg.src = `https://raw.githubusercontent.com/maxiohashi/ServiceFinalTask/main/images/${currentPhotoSet[currentModalIndex]}`;
           updateModalArrows();
         }
       });
@@ -278,11 +278,11 @@
         if (modal.style.display === "flex") {
           if (e.key === "ArrowLeft" && currentModalIndex > 0) {
             currentModalIndex--;
-            modalImg.src = `./images/${currentPhotoSet[currentModalIndex]}`;
+            modalImg.src = `https://raw.githubusercontent.com/maxiohashi/ServiceFinalTask/main/images/${currentPhotoSet[currentModalIndex]}`;
             updateModalArrows();
           } else if (e.key === "ArrowRight" && currentModalIndex < currentPhotoSet.length - 1) {
             currentModalIndex++;
-            modalImg.src = `./images/${currentPhotoSet[currentModalIndex]}`;
+            modalImg.src = `https://raw.githubusercontent.com/maxiohashi/ServiceFinalTask/main/images/${currentPhotoSet[currentModalIndex]}`;
             updateModalArrows();
           } else if (e.key === "Escape") {
             modal.style.display = "none";
